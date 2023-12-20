@@ -6,6 +6,10 @@
 | 1    |Rachman Ridwan       | 5025201061   |
 | 2    | Akmal Nafis         | 5025211216   |
 
+
+
+![image](https://cdn.discordapp.com/attachments/1174650047317684234/1187041562975285248/image.png?ex=6595719a&is=6582fc9a&hm=57cd9cce27fb4699a264a96221dacbf74ce48ef623607f23200109ab8724c5cc&)
+![image](https://cdn.discordapp.com/attachments/1174650047317684234/1187044164974690375/image.png?ex=65957407&is=6582ff07&hm=4d7ad00db0b40c56c97053f2574aa488c967fd769cbcf6ac7862402fb1df2a40&)
 #### Aura
 ```
 auto lo
@@ -246,7 +250,7 @@ ETH0_IP=$(ip -4 addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
 
 iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to-source $ETH0_IP
 ```
-
+![image](https://cdn.discordapp.com/attachments/1174650047317684234/1187009299386478622/image.png?ex=6595538e&is=6582de8e&hm=ec788069583cf557cfba6b77ef1277294a88676bf70d40042a42ed36caa356f9&)
 # Soal 2
 Kalian diminta untuk melakukan drop semua TCP dan UDP kecuali port 8080 pada TCP.
 
@@ -259,7 +263,8 @@ iptables -A INPUT -p tcp -j DROP
 # Menolak semua koneksi UDP
 iptables -A INPUT -p udp -j DROP
 ```
-
+![image](https://cdn.discordapp.com/attachments/1174650047317684234/1187029587486572554/image.png?ex=65956673&is=6582f173&hm=d77420731520ed2eb9f84e5403430a74fd06848d2b25a03efa86d556d59b525f&)
+![image](https://cdn.discordapp.com/attachments/1174650047317684234/1187029634773172234/image.png?ex=6595667e&is=6582f17e&hm=89fa8996d6a8cda2f800507adb099391ae29db117f1425c935d299925bd7751f&)
 # Soal 3
 Kepala Suku North Area meminta kalian untuk membatasi DHCP dan DNS Server hanya dapat dilakukan ping oleh maksimal 3 device secara bersamaan, selebihnya akan di drop.
 
